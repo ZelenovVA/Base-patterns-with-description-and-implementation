@@ -1,4 +1,4 @@
-package zelenov.patterns.creational.FactoryMethod;
+package zelenov.patterns.creational.factoryMethod;
 
 public class JavaDeveloper implements Developer {
     @Override

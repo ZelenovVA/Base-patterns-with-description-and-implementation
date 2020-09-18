@@ -1,4 +1,4 @@
-package zelenov.patterns.creational.FactoryMethod;
+package zelenov.patterns.creational.factoryMethod;
 
 public class Program {
     public static void main(String[] args) {
