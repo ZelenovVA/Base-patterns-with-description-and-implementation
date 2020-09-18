@@ -7,4 +7,8 @@ public class Singleton {
         if (instance==null) instance=new Singleton();
         return instance;
     }
+
+    void sayHello(){
+        System.out.println("Hello from singleton");
+    }
 }
