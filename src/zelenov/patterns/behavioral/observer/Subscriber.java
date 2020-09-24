@@ -1,4 +1,4 @@
-package zelenov.patterns.behavioral;
+package zelenov.patterns.behavioral.observer;
 
 import java.util.List;
 

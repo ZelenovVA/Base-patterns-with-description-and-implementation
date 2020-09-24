@@ -1,4 +1,4 @@
-package zelenov.patterns.behavioral;
+package zelenov.patterns.behavioral.observer;
 
 public class JobSearch {
     public static void main(String[] args) {

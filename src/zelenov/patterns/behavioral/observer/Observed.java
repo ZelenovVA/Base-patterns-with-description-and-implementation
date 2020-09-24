@@ -1,4 +1,4 @@
-package zelenov.patterns.behavioral;
+package zelenov.patterns.behavioral.observer;
 
 public interface Observed {
     void addObserver(Observer observer);
