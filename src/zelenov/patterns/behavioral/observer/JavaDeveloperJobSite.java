@@ -1,0 +1,34 @@
+package zelenov.patterns.behavioral;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class JavaDeveloperJobSite implements Observed{
+
+    List<String> vacancies=new ArrayList<>();
+    List<Observer> subscribers=new ArrayList<>();
+
+    public void addVacancy(String vacancy){
+        vacancies.add(vacancy);
+        this.notifyObservers();
+    }
+
+    public void removeVacancy(String vacancy){
+        this.vacancies.remove(vacancy);
+        notifyObservers();
+    }
+    @Override
+    public void addObserver(Observer observer) {
+        subscribers.add(observer);
+    }
+
+    @Override
+    public void removeObserver(Observer observer) {
+        subscribers.remove(observer);
+    }
+
+    @Override
+    public void notifyObservers() {
+        subscribers.stream().forEach(observer -> observer.handleEvent(vacancies));
+    }
+}
